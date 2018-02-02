@@ -1,0 +1,141 @@
+.sub.odd {
+    background-color: #350000;
+}
+
+.sub.even {
+    background-color: #6A3535;
+}
+
+.starter.odd {
+    background-color: #000035;
+}
+
+.starter.even {
+    background-color: #35356A;
+}
+
+#rangeshower {
+    text-align: center;
+}
+body {
+    background-color: #000000;
+    color: #33FF33;
+    font-family: monospace;
+    text-align: center;
+}
+table {
+    border: 2px solid #33FF33;
+    border-radius: 10px;
+    border-collapse:separate;
+    border-spacing: 0px;
+    width: 50%;
+    display: inline-table;
+    margin-top: 20px;
+}
+
+td, th {
+    border-left:solid #33FF33 1px;
+    border-top:solid #33FF33 1px;
+    padding: 2px;
+    text-align: right;
+}
+
+th {
+    border-top: none;
+    text-align: center;
+}
+td {
+    padding-right: 10px;
+}
+td:first-child, th:first-child {
+     border-left: none;
+}
+
+thead:first-child tr:first-child th:first-child, tbody:first-child tr:first-child td:first-child {
+    border-radius: 4px 0 0 0;
+}
+thead:last-child tr:last-child th:first-child, tbody:last-child tr:last-child td:first-child {
+    border-radius: 0 0 0 4px;
+}
+
+h1 {
+    font-size: 3em;
+}
+h3 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    background-color: black;
+    font-family: monospace;
+    font-size: 1.3em;
+    color: #33FF33;
+    
+}
+
+button {
+    border: 1px solid #33FF33;
+    background-color: black;
+    font-family: monospace;
+    font-size: 1.3em;
+    color: #33FF33;
+    border-radius: 4px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    opacity: .7;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+/* The slider itself */
+input[type=range] {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    background: #000000; 
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    height: 10px;
+    border: 1px solid #33FF33;
+    border-radius: 4px;
+}
+input[type=range]:focus {
+    outline: none;
+    }
+/* Mouse-over effects */
+input[type=range]:hover {
+    opacity: 1; 
+}
+
+/* The slider handle (use webkit (Chrome, Opera, Safari, Edge) and moz (Firefox) to override default look) */ 
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #33FF33; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+input[type=range]::-moz-range-thumb {
+    width: 10px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #33FF33; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+    
